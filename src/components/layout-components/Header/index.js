@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import { Link } from '@reach/router';
 import { Nav, NavbarBrand, NavItem, NavLink } from 'reactstrap';
 
-import projectLogo from '../../../assets/images/react.svg';
+import projectLogo from '../../../assets/images/UClogo.jpg';
 
 const Header = ({ headerShadow }) =>
   <Fragment>
@@ -16,15 +16,15 @@ const Header = ({ headerShadow }) =>
       )}>
       <div className="container-fluid">
         <Nav pills className="mr-auto align-items-center">
-          <NavbarBrand to="/" title="Bamburgh React UI Kit with Reactstrap Free">
+          <NavbarBrand to="/" title="UC IT Expo">
             <i className="bg-transparent">
               <img
-                alt="Bamburgh React UI Kit with Reactstrap Free"
+                alt="UC Project display"
                 style={{ width: `50px` }}
                 src={projectLogo}
               />
             </i>
-            <span className="text-white pl-2">Bamburgh</span>
+            <span className="text-white pl-2">UC IT Expo</span>
           </NavbarBrand>
           <NavItem>
             <NavLink tag={Link} className="d-block mr-1" to="/">Home</NavLink>
