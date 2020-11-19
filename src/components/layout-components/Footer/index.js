@@ -21,11 +21,10 @@ const Footer = () =>
         <div className="container pt-sm-0 pt-md-5">
           <div className="px-0 col-lg-6 col-md-8 col-sm-12 mx-auto text-center">
             <h1 className="display-3 mb-4 text-white font-weight-bold">
-              Stay up to date
+              Student driven event
             </h1>
             <p className="font-size-lg text-white-50">
-              Follow us on any of our social media accounts to find out when
-              we release new products or updates.
+              Developed by students, faculty, and alumni at the Information Technology Solutions Center
             </p>
           </div>
           {/* eslint-disable-next-line max-len */}
