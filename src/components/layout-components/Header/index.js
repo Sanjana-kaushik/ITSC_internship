@@ -30,16 +30,19 @@ const Header = ({ headerShadow }) =>
             <NavLink tag={Link} className="d-block mr-1" to="/">Home</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink tag={Link} className="d-block mr-1" to="/blog">Blog</NavLink>
+            <NavLink tag={Link} className="d-block mr-1" to="/DevOps">DevOps</NavLink>
           </NavItem>
           <NavItem>
-          <NavItem>
+            <NavLink tag={Link} className="d-block mr-1" to="/OCAT">OCAT</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink tag={Link} className="d-block mr-1" to="#/">Link</NavLink>
+            <NavLink tag={Link} className="d-block mr-1" to="/VEaas">VEaas</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink tag={Link} disabled className="d-block mr-1" to="#/">Disabled</NavLink>
+            <NavLink tag={Link} className="d-block mr-1" to="/CECH">CECH Web</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink tag={Link} className="d-block mr-1" to="/Photos">Photo Gallery</NavLink>
           </NavItem>
         </Nav>
       </div>
