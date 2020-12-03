@@ -1,12 +1,18 @@
 import React from 'react';
 import { Fragment } from 'react';
 import { Button, Card, CardBody, Col, Row } from 'reactstrap';
+import ReactPlayer from 'react-player';
 import student3 from '../assets/images/photo3.jpg';
 import logophoto from '../assets/images/logoocat.jpg';
 
 const OCAT = () =>
   <div className="default-content">
     <div className="content">
+      <div>
+        <ReactPlayer
+          url="https://youtu.be/XXGG39bHQi4"
+        />
+      </div>
       <h1>OCAT project</h1>
     </div>
     <Fragment>

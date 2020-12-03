@@ -1,12 +1,18 @@
 import React from 'react';
 import { Fragment } from 'react';
 import { Button, Card, CardBody, Col, Row } from 'reactstrap';
+import ReactPlayer from 'react-player';
 import student2 from '../assets/images/photo2.jpg';
 import logocech from '../assets/images/logocech.jpg';
 
 const CECH = () =>
   <div className="default-content">
     <div className="content">
+      <div>
+        <ReactPlayer
+          url="https://youtu.be/p1IChPfD2-s"
+        />
+      </div>
       <h1>CECH Web page</h1>
     </div>
     <Fragment>

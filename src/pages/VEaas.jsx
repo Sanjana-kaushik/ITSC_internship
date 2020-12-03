@@ -1,6 +1,7 @@
 import React from 'react';
 import { Fragment } from 'react';
 import { Button, Card, CardBody, Col, Row } from 'reactstrap';
+import ReactPlayer from 'react-player';
 import sk from '../assets/images/Sk.jpg';
 import dream from '../assets/images/dream.jpg';
 
@@ -8,6 +9,11 @@ const VE = () =>
   <div className="default-content">
     <div className="content">
       <h1>Virtual Event as a Service</h1>
+    </div>
+    <div>
+      <ReactPlayer
+        url="https://youtu.be/fEvM-OUbaKs"
+      />
     </div>
     <Fragment>
       <Row>
