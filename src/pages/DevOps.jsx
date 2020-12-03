@@ -1,12 +1,18 @@
 import React from 'react';
 import { Fragment } from 'react';
 import { Button, Card, CardBody, Col, Row } from 'reactstrap';
+import ReactPlayer from 'react-player';
 import student1 from '../assets/images/photo1.jpg';
 import logophoto from '../assets/images/logodevops.jpg';
 
 const Dev = () =>
   <div className="default-content">
     <div className="content">
+      <div>
+        <ReactPlayer
+          url="https://youtu.be/DSGyEsJ17cI"
+        />
+      </div>
       <h1>DevOps project</h1>
     </div>
     <Fragment>
