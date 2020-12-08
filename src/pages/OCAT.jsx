@@ -2,10 +2,14 @@ import React from 'react';
 import { Fragment } from 'react';
 import { Button, Card, CardBody, Col, Row } from 'reactstrap';
 import ReactPlayer from 'react-player';
+import { useRouteData } from 'react-static';
+import { Link } from '@reach/router';
 import student3 from '../assets/images/photo3.jpg';
 import logophoto from '../assets/images/logoocat.jpg';
 
-const OCAT = () =>
+const OCAT = () => {
+  const { ocat } = useRouteData();
+  return (
   <div className="default-content">
     <div className="content">
       <div>
@@ -60,6 +64,12 @@ const OCAT = () =>
         <Col xl="4" className="d-none d-xl-block" />
       </Row>
     </Fragment>
-  </div>;
+      {ocat.map(ocat =>
+        <li key={ocat.id}>
+          <Link to={`/OCAT/ocat/${ocat.id}/`}>{ocat.title}</Link>
+        </li>)}
+    </div>
+  );
+};
 
 export default OCAT;
