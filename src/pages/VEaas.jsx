@@ -2,10 +2,14 @@ import React from 'react';
 import { Fragment } from 'react';
 import { Button, Card, CardBody, Col, Row } from 'reactstrap';
 import ReactPlayer from 'react-player';
+import { useRouteData } from 'react-static';
+import { Link } from '@reach/router';
 import sk from '../assets/images/Sk.jpg';
 import dream from '../assets/images/dream.jpg';
 
-const VE = () =>
+const VE = () => {
+  const { virtualservice } = useRouteData();
+  return (
   <div className="default-content">
     <div className="content">
       <h1>Virtual Event as a Service</h1>
@@ -60,6 +64,12 @@ const VE = () =>
         <Col xl="4" className="d-none d-xl-block" />
       </Row>
     </Fragment>
-  </div>;
+      {virtualservice.map(virtualservice =>
+        <li key={virtualservice.id}>
+          <Link to={`/VEaas/virtualservice/${virtualservice.id}/`}>{virtualservice.title}</Link>
+        </li>)}
+    </div>
+  );
+};
 
 export default VE;

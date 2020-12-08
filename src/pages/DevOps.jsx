@@ -2,10 +2,14 @@ import React from 'react';
 import { Fragment } from 'react';
 import { Button, Card, CardBody, Col, Row } from 'reactstrap';
 import ReactPlayer from 'react-player';
+import { useRouteData } from 'react-static';
+import { Link } from '@reach/router';
 import student1 from '../assets/images/photo1.jpg';
 import logophoto from '../assets/images/logodevops.jpg';
 
-const Dev = () =>
+const Dev = () => {
+  const { devops } = useRouteData();
+  return (
   <div className="default-content">
     <div className="content">
       <div>
@@ -60,6 +64,14 @@ const Dev = () =>
         <Col xl="4" className="d-none d-xl-block" />
       </Row>
     </Fragment>
-  </div>;
+      <ul>
+        {devops.map(dev =>
+          <li key={dev.id}>
+            <Link to={`/DevOps/dev/${dev.id}/`}>{dev.title}</Link>
+          </li>)}
+      </ul>
+    </div>
+  );
+};
 
 export default Dev;
