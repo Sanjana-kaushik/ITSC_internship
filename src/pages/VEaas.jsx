@@ -31,13 +31,10 @@ const VE = () => {
               <p className="card-text">
                 Description of the project
               </p>
-              <Button
-                tag="a"
-                color="primary"
-                href="#/"
-                onClick={e => e.preventDefault()}>
-                Click to learn more
-              </Button>
+                {virtualservice.map(virtualservice =>
+                  <li key={virtualservice.id}>
+                    <Link to={`/VEaas/virtualservice/${virtualservice.id}/`}>{virtualservice.title}</Link>
+                  </li>)}
             </CardBody>
           </Card>
         </Col>
@@ -64,10 +61,12 @@ const VE = () => {
         <Col xl="4" className="d-none d-xl-block" />
       </Row>
     </Fragment>
-      {virtualservice.map(virtualservice =>
-        <li key={virtualservice.id}>
-          <Link to={`/VEaas/virtualservice/${virtualservice.id}/`}>{virtualservice.title}</Link>
-        </li>)}
+      <div>
+        <ReactPlayer
+          url="https://youtu.be/fEvM-OUbaKs"
+        />
+      </div>
+
     </div>
   );
 };

@@ -31,13 +31,10 @@ const Dev = () => {
               <p className="card-text">
                 Description of the project
               </p>
-              <Button
-                tag="a"
-                color="primary"
-                href="#/"
-                onClick={e => e.preventDefault()}>
-                Click to learn more
-              </Button>
+                {devops.map(dev =>
+                  <li key={dev.id}>
+                    <Link to={`/DevOps/dev/${dev.id}/`}>{dev.title}</Link>
+                  </li>)}
             </CardBody>
           </Card>
         </Col>
@@ -64,12 +61,12 @@ const Dev = () => {
         <Col xl="4" className="d-none d-xl-block" />
       </Row>
     </Fragment>
-      <ul>
-        {devops.map(dev =>
-          <li key={dev.id}>
-            <Link to={`/DevOps/dev/${dev.id}/`}>{dev.title}</Link>
-          </li>)}
-      </ul>
+      <div>
+        <ReactPlayer
+          url="https://youtu.be/DSGyEsJ17cI"
+        />
+      </div>
+      <ul />
     </div>
   );
 };
