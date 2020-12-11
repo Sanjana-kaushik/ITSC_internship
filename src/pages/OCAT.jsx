@@ -31,13 +31,10 @@ const OCAT = () => {
               <p className="card-text">
                 Description of the project
               </p>
-              <Button
-                tag="a"
-                color="primary"
-                href="#/"
-                onClick={e => e.preventDefault()}>
-                Click to learn more
-              </Button>
+                {ocat.map(ocat =>
+                  <li key={ocat.id}>
+                    <Link to={`/OCAT/ocat/${ocat.id}/`}>{ocat.title}</Link>
+                  </li>)}
             </CardBody>
           </Card>
         </Col>
@@ -64,10 +61,12 @@ const OCAT = () => {
         <Col xl="4" className="d-none d-xl-block" />
       </Row>
     </Fragment>
-      {ocat.map(ocat =>
-        <li key={ocat.id}>
-          <Link to={`/OCAT/ocat/${ocat.id}/`}>{ocat.title}</Link>
-        </li>)}
+      <div>
+        <ReactPlayer
+          url="https://youtu.be/XXGG39bHQi4"
+        />
+      </div>
+
     </div>
   );
 };

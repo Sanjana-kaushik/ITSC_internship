@@ -64,10 +64,12 @@ const CECH = () => {
         <Col xl="4" className="d-none d-xl-block" />
       </Row>
     </Fragment>
-      {cech.map(cech =>
-        <li key={cech.id}>
-          <Link to={`/CECH/cech/${cech.id}/`}>{cech.title}</Link>
-        </li>)}
+      <div>
+        <ReactPlayer
+          url="https://youtu.be/p1IChPfD2-s"
+        />
+      </div>
+
     </div>
   );
 };
