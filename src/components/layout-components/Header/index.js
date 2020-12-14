@@ -33,7 +33,7 @@ const Header = ({ headerShadow }) =>
             <NavLink tag={Link} className="d-block mr-1" to="/dev-ops">DevOps</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink tag={Link} className="d-block mr-1" to="/OCAT">OCAT</NavLink>
+            <NavLink tag={Link} className="d-block mr-1" to="/ocat">OCAT</NavLink>
           </NavItem>
           <NavItem>
             <NavLink tag={Link} className="d-block mr-1" to="/VEaas">VEaas</NavLink>
