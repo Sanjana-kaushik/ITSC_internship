@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import { Link } from '@reach/router';
 import { Nav, NavbarBrand, NavItem, NavLink } from 'reactstrap';
 
-import projectLogo from '../../../assets/images/react.svg';
+import projectLogo from '../../../assets/images/UClogo.jpg';
 
 const Header = ({ headerShadow }) =>
   <Fragment>
@@ -16,30 +16,33 @@ const Header = ({ headerShadow }) =>
       )}>
       <div className="container-fluid">
         <Nav pills className="mr-auto align-items-center">
-          <NavbarBrand to="/" title="Bamburgh React UI Kit with Reactstrap Free">
+          <NavbarBrand to="/" title="UC IT Expo">
             <i className="bg-transparent">
               <img
-                alt="Bamburgh React UI Kit with Reactstrap Free"
+                alt="UC Logo"
                 style={{ width: `50px` }}
                 src={projectLogo}
               />
             </i>
-            <span className="text-white pl-2">Bamburgh</span>
+            <span className="text-white pl-2">UC IT Expo</span>
           </NavbarBrand>
           <NavItem>
             <NavLink tag={Link} className="d-block mr-1" to="/">Home</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink tag={Link} className="d-block mr-1" to="/blog">Blog</NavLink>
+            <NavLink tag={Link} className="d-block mr-1" to="/dev-ops">DevOps</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink tag={Link} className="d-block mr-1" to="/example-page">Template Page</NavLink>
+            <NavLink tag={Link} className="d-block mr-1" to="/ocat">OCAT</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink tag={Link} className="d-block mr-1" to="#/">Link</NavLink>
+            <NavLink tag={Link} className="d-block mr-1" to="/VEaas">VEaas</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink tag={Link} disabled className="d-block mr-1" to="#/">Disabled</NavLink>
+            <NavLink tag={Link} className="d-block mr-1" to="/cech">CECH Web</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink tag={Link} className="d-block mr-1" to="/photos">Photo Gallery</NavLink>
           </NavItem>
         </Nav>
       </div>
