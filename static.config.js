@@ -59,7 +59,7 @@ export default {
       getData: () => ({
         cech,
       }),
-      path: `/CECH`,
+      path: `/cech`,
     },
     {
       children: ocat.map((ocat) => ({
