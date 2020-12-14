@@ -72,7 +72,7 @@ export default {
       getData: () => ({
         ocat,
       }),
-      path: `/OCAT`,
+      path: `/ocat`,
     },
   ],
   plugins: [
