@@ -53,7 +53,7 @@ export default {
         getData: () => ({
           cech,
         }),
-        path: `/cech/${cech.id}`,
+        path: `/${cech.id}`,
         template: `src/containers/Cech`,
       })),
       getData: () => ({
