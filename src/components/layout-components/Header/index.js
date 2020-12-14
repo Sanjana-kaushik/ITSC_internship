@@ -39,10 +39,10 @@ const Header = ({ headerShadow }) =>
             <NavLink tag={Link} className="d-block mr-1" to="/VEaas">VEaas</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink tag={Link} className="d-block mr-1" to="/CECH">CECH Web</NavLink>
+            <NavLink tag={Link} className="d-block mr-1" to="/cech">CECH Web</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink tag={Link} className="d-block mr-1" to="/Photos">Photo Gallery</NavLink>
+            <NavLink tag={Link} className="d-block mr-1" to="/photos">Photo Gallery</NavLink>
           </NavItem>
         </Nav>
       </div>
