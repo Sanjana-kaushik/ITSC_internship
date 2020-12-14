@@ -40,7 +40,7 @@ export default {
         getData: () => ({
           virtualservice,
         }),
-        path: `/virtualservice/${virtualservice.id}`,
+        path: `/${virtualservice.id}`,
         template: `src/containers/Virtual`,
       })),
       getData: () => ({
