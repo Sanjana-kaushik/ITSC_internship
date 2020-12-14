@@ -19,7 +19,7 @@ const Header = ({ headerShadow }) =>
           <NavbarBrand to="/" title="UC IT Expo">
             <i className="bg-transparent">
               <img
-                alt="UC Project display"
+                alt="UC Logo"
                 style={{ width: `50px` }}
                 src={projectLogo}
               />
